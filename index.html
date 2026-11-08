@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="MZ United — coming soon.">
+<title>MZ United</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<!-- Public holding page. Self-contained: no trackers, no external fonts or scripts, no link to the private owners system. -->
+<style>
+  :root { --bg:#f6f6f3; --ink:#16181c; --muted:#6b7280; --line:#e6e5df; --accent:#1d4e48; --soft:#e3efec; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0e1116; --ink:#e7eaee; --muted:#8b95a3; --line:#252c36; --accent:#7cc5b8; --soft:#17302c; } }
+  * { box-sizing: border-box; } html,body { margin:0; height:100%; }
+  body { background: radial-gradient(1100px 560px at 15% -10%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 60%), var(--bg);
+    color: var(--ink); font-family: "Inter","Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif; -webkit-font-smoothing: antialiased;
+    display:flex; flex-direction:column; min-height:100vh; }
+  main { flex:1; display:grid; place-items:center; padding:48px 24px; }
+  .wrap { max-width: 640px; }
+  .mark { display:inline-grid; place-items:center; width:56px; height:56px; border-radius:15px; background:var(--accent); color:var(--bg); font-weight:800; letter-spacing:.05em; margin-bottom:28px; }
+  h1 { font-size: clamp(2.4rem, 7vw, 3.8rem); letter-spacing:-.035em; line-height:1.02; margin:0 0 18px; font-weight:700; }
+  p.lead { font-size: 1.15rem; line-height:1.6; color: var(--muted); margin:0 0 30px; max-width: 520px; }
+  .tag { display:inline-flex; align-items:center; gap:8px; font-size:.85rem; font-weight:600; color:var(--accent); background:var(--soft); padding:6px 12px; border-radius:99px; }
+  .tag i { width:7px; height:7px; border-radius:50%; background:currentColor; display:inline-block; }
+  .contact { margin-top: 26px; font-size: .95rem; color: var(--muted); }
+  .contact a { color: var(--ink); text-underline-offset: 3px; }
+  footer { padding: 22px 24px; border-top:1px solid var(--line); color:var(--muted); font-size:.82rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="wrap">
+    <div class="mark" aria-hidden="true">MZ</div>
+    <h1>MZ United</h1>
+    <!-- EDIT: replace this sentence with your one-line mission once you have decided what to say publicly. -->
+    <p class="lead">Something new is being built. We'll share more soon.</p>
+    <span class="tag"><i></i> Coming soon</span>
+    <!-- EDIT: uncomment once a mailbox at the domain exists (e.g. via GoDaddy email or another provider).
+    <p class="contact">Contact: <a href="mailto:hello@mzunited.com">hello@mzunited.com</a></p>
+    -->
+  </div>
+</main>
+<footer><span>© <span id="y">2026</span> MZ United</span><span>mzunited.com</span></footer>
+</body>
+</html>
